@@ -9,20 +9,20 @@
     --background: 260 20% 6%;
     --foreground: 0 0% 100%;
 
-    --card: 240 10% 7%;
+    --card: 260 20% 9%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 240 10% 7%;
+    --popover: 260 20% 9%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 270 90% 37%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 10% 12%;
+    --secondary: 260 20% 14%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 10% 15%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 260 18% 17%;
+    --muted-foreground: 260 10% 65%;
 
     --accent: 51 100% 50%;
     --accent-foreground: 240 10% 4%;
@@ -30,8 +30,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 18%;
-    --input: 240 10% 18%;
+    --border: 260 18% 20%;
+    --input: 260 18% 20%;
     --ring: 270 90% 37%;
 
     --radius: 0.75rem;
@@ -40,7 +40,7 @@
     --gold-dim: 43 80% 40%;
     --purple-glow: 270 90% 50%;
     --purple-deep: 270 90% 37%;
-    --glass: 240 10% 12%;
+    --glass: 260 20% 14%;
   }
 }
 
@@ -52,6 +52,8 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    background: linear-gradient(145deg, hsl(270 25% 6%), hsl(260 20% 8%) 40%, hsl(250 15% 5%) 100%);
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -133,7 +135,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(240 10% 4%);
+  background: hsl(260 20% 6%);
 }
 
 ::-webkit-scrollbar-thumb {
